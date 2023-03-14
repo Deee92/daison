@@ -40,7 +40,7 @@
       <version>2.14.2</version>
     </dependency>
 
-    <!-- TODO: json-simple -->
+    <!-- json-simple -->
     <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
     <dependency>
       <groupId>com.googlecode.json-simple</groupId>

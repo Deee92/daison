@@ -1,0 +1,154 @@
+===== JSON-SIMPLE =====
+Chicory warning: ClassFile: org.json.simple.JSONObject - classfile version (46) is out of date and may not be processed correctly.
+Chicory warning: ClassFile: org.json.simple.JSONAware - classfile version (46) is out of date and may not be processed correctly.
+Chicory warning: ClassFile: org.json.simple.JSONStreamAware - classfile version (46) is out of date and may not be processed correctly.
+Chicory warning: ClassFile: org.json.simple.JSONValue - classfile version (46) is out of date and may not be processed correctly.
+Chicory warning: ClassFile: org.json.simple.parser.ParseException - classfile version (46) is out of date and may not be processed correctly.
+{"name":"Labrador Retriever","colour":"yellow","breed":"Labrador Retriever","age":7}
+Daikon version 5.8.16, released November 9, 2022; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+org.json.simple.JSONObject:::CLASS
+===========================================================================
+org.json.simple.JSONObject:::OBJECT
+this has only one value
+===========================================================================
+org.json.simple.JSONObject.JSONObject(java.util.Map):::ENTER
+map has only one value
+map.getClass().getName() == java.util.LinkedHashMap.class
+===========================================================================
+org.json.simple.JSONObject.JSONObject(java.util.Map):::EXIT
+===========================================================================
+org.json.simple.JSONObject.toJSONString():::ENTER
+===========================================================================
+org.json.simple.JSONObject.toJSONString():::EXIT
+return has only one value
+return.toString == "{\"name\":\"Labrador Retriever\",\"colour\":\"yellow\",\"breed\":\"Labrador Retriever\",\"age\":7}"
+===========================================================================
+org.json.simple.JSONObject.toJSONString(java.lang.String, java.lang.Object, java.lang.StringBuffer):::ENTER
+sb has only one value
+===========================================================================
+org.json.simple.JSONObject.toJSONString(java.lang.String, java.lang.Object, java.lang.StringBuffer):::EXIT
+key.toString == orig(key.toString)
+===========================================================================
+org.json.simple.JSONObject.toJSONString(java.util.Map):::ENTER
+map has only one value
+map.getClass().getName() == org.json.simple.JSONObject.class
+===========================================================================
+org.json.simple.JSONObject.toJSONString(java.util.Map):::EXIT104
+===========================================================================
+org.json.simple.JSONObject.toJSONString(java.util.Map):::EXIT
+return has only one value
+return.toString == "{\"name\":\"Labrador Retriever\",\"colour\":\"yellow\",\"breed\":\"Labrador Retriever\",\"age\":7}"
+===========================================================================
+org.json.simple.JSONValue.escape(java.lang.String):::ENTER
+s.toString one of { "Labrador Retriever", "yellow" }
+===========================================================================
+org.json.simple.JSONValue.escape(java.lang.String):::EXIT220
+===========================================================================
+org.json.simple.JSONValue.escape(java.lang.String):::EXIT
+s.toString == orig(s.toString)
+s.toString one of { "Labrador Retriever", "yellow" }
+return.toString one of { "Labrador Retriever", "yellow" }
+===========================================================================
+org.json.simple.JSONValue.escape(java.lang.String, java.lang.StringBuffer):::ENTER
+===========================================================================
+org.json.simple.JSONValue.escape(java.lang.String, java.lang.StringBuffer):::EXIT
+s.toString == orig(s.toString)
+===========================================================================
+org.json.simple.JSONValue.toJSONString(java.lang.Object):::ENTER
+===========================================================================
+org.json.simple.JSONValue.toJSONString(java.lang.Object):::EXIT176
+return.toString one of { "\"Labrador Retriever\"", "\"yellow\"" }
+orig(value.getClass().getName()) == java.lang.String.class
+===========================================================================
+org.json.simple.JSONValue.toJSONString(java.lang.Object):::EXIT193
+return has only one value
+return.toString == "7"
+orig(value) has only one value
+orig(value.getClass().getName()) == java.lang.Integer.class
+===========================================================================
+org.json.simple.JSONValue.toJSONString(java.lang.Object):::EXIT
+return.toString one of { "\"Labrador Retriever\"", "\"yellow\"", "7" }
+===========================================================================
+se.kth.entities.Dog:::OBJECT
+this has only one value
+this.name has only one value
+this.name.toString == "Kaaju"
+this.breed has only one value
+this.breed.toString == "Labrador Retriever"
+this.colour has only one value
+this.colour.toString == "yellow"
+this.age == 7
+===========================================================================
+se.kth.entities.Dog.Dog(java.lang.String, java.lang.String, java.lang.String, int):::ENTER
+name has only one value
+name.toString == "Kaaju"
+breed has only one value
+breed.toString == "Labrador Retriever"
+colour has only one value
+colour.toString == "yellow"
+age == 7
+===========================================================================
+se.kth.entities.Dog.Dog(java.lang.String, java.lang.String, java.lang.String, int):::EXIT
+this.name == orig(name)
+this.breed == orig(breed)
+this.colour == orig(colour)
+this.age == orig(age)
+name.toString == orig(name.toString)
+breed.toString == orig(breed.toString)
+colour.toString == orig(colour.toString)
+name.toString == "Kaaju"
+breed.toString == "Labrador Retriever"
+colour.toString == "yellow"
+===========================================================================
+se.kth.entities.Dog.getAge():::ENTER
+===========================================================================
+se.kth.entities.Dog.getAge():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.breed == orig(this.breed)
+this.breed.toString == orig(this.breed.toString)
+this.colour == orig(this.colour)
+this.colour.toString == orig(this.colour.toString)
+this.age == orig(this.age)
+return == 7
+===========================================================================
+se.kth.entities.Dog.getBreed():::ENTER
+===========================================================================
+se.kth.entities.Dog.getBreed():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.breed == orig(this.breed)
+this.breed.toString == orig(this.breed.toString)
+this.colour == orig(this.colour)
+this.colour.toString == orig(this.colour.toString)
+this.age == orig(this.age)
+return has only one value
+return.toString == "Labrador Retriever"
+===========================================================================
+se.kth.entities.Dog.getColour():::ENTER
+===========================================================================
+se.kth.entities.Dog.getColour():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.breed == orig(this.breed)
+this.breed.toString == orig(this.breed.toString)
+this.colour == orig(this.colour)
+this.colour.toString == orig(this.colour.toString)
+this.age == orig(this.age)
+return has only one value
+return.toString == "yellow"
+===========================================================================
+se.kth.jsonlibs.JsonSimpleMain.main(java.lang.String[]):::ENTER
+args has only one value
+args.getClass().getName() == java.lang.String[].class
+args[] == []
+args[].toString == []
+===========================================================================
+se.kth.jsonlibs.JsonSimpleMain.main(java.lang.String[]):::EXIT
+args[] == orig(args[])
+args[] == []
+args[].toString == []
+Exiting Daikon.
