@@ -1,0 +1,357 @@
+===== ORG-JSON =====
+{
+  "colour": "yellow",
+  "name": "Kaaju",
+  "breed": "Labrador Retriever",
+  "age": 7
+}
+Daikon version 5.8.16, released November 9, 2022; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+org.json.JSONObject$Null:::OBJECT
+this has only one value
+===========================================================================
+org.json.JSONObject$Null.Null():::EXIT
+===========================================================================
+org.json.JSONObject$Null.equals(java.lang.Object):::ENTER
+===========================================================================
+org.json.JSONObject$Null.equals(java.lang.Object):::EXIT
+return == false
+===========================================================================
+org.json.JSONObject$Null.equals(java.lang.Object):::EXIT;condition="not(return == true)"
+===========================================================================
+org.json.JSONObject:::CLASS
+org.json.JSONObject.NUMBER_PATTERN has only one value
+org.json.JSONObject.NUMBER_PATTERN != null
+org.json.JSONObject.NULL has only one value
+org.json.JSONObject.NULL != null
+org.json.JSONObject.NULL.getClass().getName() == org.json.JSONObject$Null.class
+===========================================================================
+org.json.JSONObject:::OBJECT
+this has only one value
+this.map has only one value
+this.map != null
+this.map.getClass().getName() == java.util.HashMap.class
+===========================================================================
+org.json.JSONObject.JSONObject():::EXIT
+===========================================================================
+org.json.JSONObject.JSONObject(java.lang.Object):::ENTER
+bean has only one value
+bean.getClass().getName() == se.kth.entities.Dog.class
+===========================================================================
+org.json.JSONObject.JSONObject(java.lang.Object):::EXIT
+===========================================================================
+org.json.JSONObject.entrySet():::ENTER
+===========================================================================
+org.json.JSONObject.entrySet():::EXIT
+org.json.JSONObject.NUMBER_PATTERN == orig(org.json.JSONObject.NUMBER_PATTERN)
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+org.json.JSONObject.NULL == orig(org.json.JSONObject.NULL)
+org.json.JSONObject.NULL.getClass().getName() == orig(org.json.JSONObject.NULL.getClass().getName())
+return has only one value
+return.getClass().getName() == java.util.HashMap$EntrySet.class
+===========================================================================
+org.json.JSONObject.getAnnotation(java.lang.reflect.Method, java.lang.Class):::ENTER
+annotationClass has only one value
+===========================================================================
+org.json.JSONObject.getAnnotation(java.lang.reflect.Method, java.lang.Class):::EXIT1643
+===========================================================================
+org.json.JSONObject.getAnnotation(java.lang.reflect.Method, java.lang.Class):::EXIT1665
+===========================================================================
+org.json.JSONObject.getAnnotation(java.lang.reflect.Method, java.lang.Class):::EXIT
+org.json.JSONObject.NUMBER_PATTERN == orig(org.json.JSONObject.NUMBER_PATTERN)
+org.json.JSONObject.NULL == orig(org.json.JSONObject.NULL)
+org.json.JSONObject.NULL.getClass().getName() == orig(org.json.JSONObject.NULL.getClass().getName())
+return == null
+===========================================================================
+org.json.JSONObject.getAnnotationDepth(java.lang.reflect.Method, java.lang.Class):::ENTER
+annotationClass has only one value
+===========================================================================
+org.json.JSONObject.getAnnotationDepth(java.lang.reflect.Method, java.lang.Class):::EXIT1693
+===========================================================================
+org.json.JSONObject.getAnnotationDepth(java.lang.reflect.Method, java.lang.Class):::EXIT1724
+===========================================================================
+org.json.JSONObject.getAnnotationDepth(java.lang.reflect.Method, java.lang.Class):::EXIT
+org.json.JSONObject.NUMBER_PATTERN == orig(org.json.JSONObject.NUMBER_PATTERN)
+org.json.JSONObject.NULL == orig(org.json.JSONObject.NULL)
+org.json.JSONObject.NULL.getClass().getName() == orig(org.json.JSONObject.NULL.getClass().getName())
+return == -1
+===========================================================================
+org.json.JSONObject.getKeyNameFromMethod(java.lang.reflect.Method):::ENTER
+===========================================================================
+org.json.JSONObject.getKeyNameFromMethod(java.lang.reflect.Method):::EXIT1600
+return == null
+===========================================================================
+org.json.JSONObject.getKeyNameFromMethod(java.lang.reflect.Method):::EXIT1613
+===========================================================================
+org.json.JSONObject.getKeyNameFromMethod(java.lang.reflect.Method):::EXIT
+org.json.JSONObject.NUMBER_PATTERN == orig(org.json.JSONObject.NUMBER_PATTERN)
+org.json.JSONObject.NULL == orig(org.json.JSONObject.NULL)
+org.json.JSONObject.NULL.getClass().getName() == orig(org.json.JSONObject.NULL.getClass().getName())
+===========================================================================
+org.json.JSONObject.indent(java.io.Writer, int):::ENTER
+writer has only one value
+writer.getClass().getName() == java.io.StringWriter.class
+indent one of { 0, 2 }
+===========================================================================
+org.json.JSONObject.indent(java.io.Writer, int):::EXIT
+org.json.JSONObject.NUMBER_PATTERN == orig(org.json.JSONObject.NUMBER_PATTERN)
+org.json.JSONObject.NULL == orig(org.json.JSONObject.NULL)
+org.json.JSONObject.NULL.getClass().getName() == orig(org.json.JSONObject.NULL.getClass().getName())
+===========================================================================
+org.json.JSONObject.isValidMethodName(java.lang.String):::ENTER
+===========================================================================
+org.json.JSONObject.isValidMethodName(java.lang.String):::EXIT
+org.json.JSONObject.NUMBER_PATTERN == orig(org.json.JSONObject.NUMBER_PATTERN)
+org.json.JSONObject.NULL == orig(org.json.JSONObject.NULL)
+org.json.JSONObject.NULL.getClass().getName() == orig(org.json.JSONObject.NULL.getClass().getName())
+name.toString == orig(name.toString)
+(return == false)  ==>  (name.toString == "getClass")
+(return == false)  ==>  (orig(name) has only one value)
+===========================================================================
+org.json.JSONObject.isValidMethodName(java.lang.String):::EXIT;condition="return == true"
+return == true
+===========================================================================
+org.json.JSONObject.isValidMethodName(java.lang.String):::EXIT;condition="not(return == true)"
+name.toString == "getClass"
+return == false
+orig(name) has only one value
+===========================================================================
+org.json.JSONObject.length():::ENTER
+===========================================================================
+org.json.JSONObject.length():::EXIT
+org.json.JSONObject.NUMBER_PATTERN == orig(org.json.JSONObject.NUMBER_PATTERN)
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+org.json.JSONObject.NULL == orig(org.json.JSONObject.NULL)
+org.json.JSONObject.NULL.getClass().getName() == orig(org.json.JSONObject.NULL.getClass().getName())
+return == 4
+===========================================================================
+org.json.JSONObject.numberIsFinite(java.lang.Number):::ENTER
+n has only one value
+n.getClass().getName() == java.lang.Integer.class
+===========================================================================
+org.json.JSONObject.numberIsFinite(java.lang.Number):::EXIT2188
+===========================================================================
+org.json.JSONObject.numberIsFinite(java.lang.Number):::EXIT2188;condition="return == true"
+===========================================================================
+org.json.JSONObject.numberIsFinite(java.lang.Number):::EXIT
+org.json.JSONObject.NUMBER_PATTERN == orig(org.json.JSONObject.NUMBER_PATTERN)
+org.json.JSONObject.NULL == orig(org.json.JSONObject.NULL)
+org.json.JSONObject.NULL.getClass().getName() == orig(org.json.JSONObject.NULL.getClass().getName())
+return == true
+===========================================================================
+org.json.JSONObject.numberIsFinite(java.lang.Number):::EXIT;condition="return == true"
+===========================================================================
+org.json.JSONObject.numberToString(java.lang.Number):::ENTER
+number has only one value
+number.getClass().getName() == java.lang.Integer.class
+===========================================================================
+org.json.JSONObject.numberToString(java.lang.Number):::EXIT
+org.json.JSONObject.NUMBER_PATTERN == orig(org.json.JSONObject.NUMBER_PATTERN)
+org.json.JSONObject.NULL == orig(org.json.JSONObject.NULL)
+org.json.JSONObject.NULL.getClass().getName() == orig(org.json.JSONObject.NULL.getClass().getName())
+return has only one value
+return.toString == "7"
+===========================================================================
+org.json.JSONObject.populateMap(java.lang.Object):::ENTER
+bean has only one value
+bean.getClass().getName() == se.kth.entities.Dog.class
+===========================================================================
+org.json.JSONObject.populateMap(java.lang.Object):::EXIT
+org.json.JSONObject.NUMBER_PATTERN == orig(org.json.JSONObject.NUMBER_PATTERN)
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+org.json.JSONObject.NULL == orig(org.json.JSONObject.NULL)
+org.json.JSONObject.NULL.getClass().getName() == orig(org.json.JSONObject.NULL.getClass().getName())
+===========================================================================
+org.json.JSONObject.populateMap(java.lang.Object, java.util.Set):::ENTER
+bean has only one value
+bean.getClass().getName() == se.kth.entities.Dog.class
+objectsRecord has only one value
+objectsRecord.getClass().getName() == java.util.Collections$SetFromMap.class
+===========================================================================
+org.json.JSONObject.populateMap(java.lang.Object, java.util.Set):::EXIT
+org.json.JSONObject.NUMBER_PATTERN == orig(org.json.JSONObject.NUMBER_PATTERN)
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+org.json.JSONObject.NULL == orig(org.json.JSONObject.NULL)
+org.json.JSONObject.NULL.getClass().getName() == orig(org.json.JSONObject.NULL.getClass().getName())
+===========================================================================
+org.json.JSONObject.quote(java.lang.String):::ENTER
+===========================================================================
+org.json.JSONObject.quote(java.lang.String):::EXIT2011
+===========================================================================
+org.json.JSONObject.quote(java.lang.String):::EXIT
+org.json.JSONObject.NUMBER_PATTERN == orig(org.json.JSONObject.NUMBER_PATTERN)
+org.json.JSONObject.NULL == orig(org.json.JSONObject.NULL)
+org.json.JSONObject.NULL.getClass().getName() == orig(org.json.JSONObject.NULL.getClass().getName())
+string.toString == orig(string.toString)
+===========================================================================
+org.json.JSONObject.quote(java.lang.String, java.io.Writer):::ENTER
+w.getClass().getName() == java.io.StringWriter.class
+===========================================================================
+org.json.JSONObject.quote(java.lang.String, java.io.Writer):::EXIT2075
+===========================================================================
+org.json.JSONObject.quote(java.lang.String, java.io.Writer):::EXIT
+org.json.JSONObject.NUMBER_PATTERN == orig(org.json.JSONObject.NUMBER_PATTERN)
+org.json.JSONObject.NULL == orig(org.json.JSONObject.NULL)
+org.json.JSONObject.NULL.getClass().getName() == orig(org.json.JSONObject.NULL.getClass().getName())
+string.toString == orig(string.toString)
+return.getClass().getName() == java.io.StringWriter.class
+===========================================================================
+org.json.JSONObject.testValidity(java.lang.Object):::ENTER
+o has only one value
+o.getClass().getName() == java.lang.Integer.class
+===========================================================================
+org.json.JSONObject.testValidity(java.lang.Object):::EXIT
+org.json.JSONObject.NUMBER_PATTERN == orig(org.json.JSONObject.NUMBER_PATTERN)
+org.json.JSONObject.NULL == orig(org.json.JSONObject.NULL)
+org.json.JSONObject.NULL.getClass().getName() == orig(org.json.JSONObject.NULL.getClass().getName())
+===========================================================================
+org.json.JSONObject.toString(int):::ENTER
+indentFactor == 2
+===========================================================================
+org.json.JSONObject.toString(int):::EXIT
+org.json.JSONObject.NUMBER_PATTERN == orig(org.json.JSONObject.NUMBER_PATTERN)
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+org.json.JSONObject.NULL == orig(org.json.JSONObject.NULL)
+org.json.JSONObject.NULL.getClass().getName() == orig(org.json.JSONObject.NULL.getClass().getName())
+return has only one value
+return.toString == "{\n  \"colour\": \"yellow\",\n  \"name\": \"Kaaju\",\n  \"breed\": \"Labrador Retriever\",\n  \"age\": 7\n}"
+===========================================================================
+org.json.JSONObject.wrap(java.lang.Object, java.util.Set):::ENTER
+objectsRecord has only one value
+objectsRecord.getClass().getName() == java.util.Collections$SetFromMap.class
+===========================================================================
+org.json.JSONObject.wrap(java.lang.Object, java.util.Set):::EXIT2468
+===========================================================================
+org.json.JSONObject.wrap(java.lang.Object, java.util.Set):::EXIT
+org.json.JSONObject.NUMBER_PATTERN == orig(org.json.JSONObject.NUMBER_PATTERN)
+org.json.JSONObject.NULL == orig(org.json.JSONObject.NULL)
+org.json.JSONObject.NULL.getClass().getName() == orig(org.json.JSONObject.NULL.getClass().getName())
+===========================================================================
+org.json.JSONObject.write(java.io.Writer, int, int):::ENTER
+writer has only one value
+writer.getClass().getName() == java.io.StringWriter.class
+indentFactor == 2
+indent == 0
+===========================================================================
+org.json.JSONObject.write(java.io.Writer, int, int):::EXIT
+org.json.JSONObject.NUMBER_PATTERN == orig(org.json.JSONObject.NUMBER_PATTERN)
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+org.json.JSONObject.NULL == orig(org.json.JSONObject.NULL)
+org.json.JSONObject.NULL.getClass().getName() == orig(org.json.JSONObject.NULL.getClass().getName())
+return has only one value
+return.getClass().getName() == java.io.StringWriter.class
+===========================================================================
+org.json.JSONObject.writeValue(java.io.Writer, java.lang.Object, int, int):::ENTER
+writer has only one value
+writer.getClass().getName() == java.io.StringWriter.class
+indentFactor == 2
+indent == 2
+===========================================================================
+org.json.JSONObject.writeValue(java.io.Writer, java.lang.Object, int, int):::EXIT
+org.json.JSONObject.NUMBER_PATTERN == orig(org.json.JSONObject.NUMBER_PATTERN)
+org.json.JSONObject.NULL == orig(org.json.JSONObject.NULL)
+org.json.JSONObject.NULL.getClass().getName() == orig(org.json.JSONObject.NULL.getClass().getName())
+return has only one value
+return.getClass().getName() == java.io.StringWriter.class
+===========================================================================
+se.kth.entities.Dog:::OBJECT
+this has only one value
+this.name has only one value
+this.name.toString == "Kaaju"
+this.breed has only one value
+this.breed.toString == "Labrador Retriever"
+this.colour has only one value
+this.colour.toString == "yellow"
+this.age == 7
+===========================================================================
+se.kth.entities.Dog.Dog(java.lang.String, java.lang.String, java.lang.String, int):::ENTER
+name has only one value
+name.toString == "Kaaju"
+breed has only one value
+breed.toString == "Labrador Retriever"
+colour has only one value
+colour.toString == "yellow"
+age == 7
+===========================================================================
+se.kth.entities.Dog.Dog(java.lang.String, java.lang.String, java.lang.String, int):::EXIT
+this.name == orig(name)
+this.breed == orig(breed)
+this.colour == orig(colour)
+this.age == orig(age)
+name.toString == orig(name.toString)
+breed.toString == orig(breed.toString)
+colour.toString == orig(colour.toString)
+name.toString == "Kaaju"
+breed.toString == "Labrador Retriever"
+colour.toString == "yellow"
+===========================================================================
+se.kth.entities.Dog.getAge():::ENTER
+===========================================================================
+se.kth.entities.Dog.getAge():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.breed == orig(this.breed)
+this.breed.toString == orig(this.breed.toString)
+this.colour == orig(this.colour)
+this.colour.toString == orig(this.colour.toString)
+this.age == orig(this.age)
+return == 7
+===========================================================================
+se.kth.entities.Dog.getBreed():::ENTER
+===========================================================================
+se.kth.entities.Dog.getBreed():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.breed == orig(this.breed)
+this.breed.toString == orig(this.breed.toString)
+this.colour == orig(this.colour)
+this.colour.toString == orig(this.colour.toString)
+this.age == orig(this.age)
+return has only one value
+return.toString == "Labrador Retriever"
+===========================================================================
+se.kth.entities.Dog.getColour():::ENTER
+===========================================================================
+se.kth.entities.Dog.getColour():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.breed == orig(this.breed)
+this.breed.toString == orig(this.breed.toString)
+this.colour == orig(this.colour)
+this.colour.toString == orig(this.colour.toString)
+this.age == orig(this.age)
+return has only one value
+return.toString == "yellow"
+===========================================================================
+se.kth.entities.Dog.getName():::ENTER
+===========================================================================
+se.kth.entities.Dog.getName():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.breed == orig(this.breed)
+this.breed.toString == orig(this.breed.toString)
+this.colour == orig(this.colour)
+this.colour.toString == orig(this.colour.toString)
+this.age == orig(this.age)
+return has only one value
+return.toString == "Kaaju"
+===========================================================================
+se.kth.jsonlibs.OrgJsonMain.main(java.lang.String[]):::ENTER
+args has only one value
+args.getClass().getName() == java.lang.String[].class
+args[] == []
+args[].toString == []
+===========================================================================
+se.kth.jsonlibs.OrgJsonMain.main(java.lang.String[]):::EXIT
+args[] == orig(args[])
+args[] == []
+args[].toString == []
+Exiting Daikon.
